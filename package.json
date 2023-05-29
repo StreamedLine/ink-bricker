@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"build": "babel --out-dir=dist source",
-		"dev": "babel --out-dir=dist --watch source",
+		"dev": "babel --out-dir=dist --watch source"
 	},
 	"files": [
 		"dist"

@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import {Box, Text, Spacer, useInput} from 'ink';
+import {Box, Text, useInput} from 'ink';
 import  {WIDTH, HEIGHT, grid, player, game} from "./state.js"
 
 const cellToText = ({symb, backgroundColor}, i) => <Text backgroundColor={backgroundColor} key={symb + String(i)}>{symb}</Text>;
 
 export default function App() {
-	const [counter, setCounter] = useState(0);
 	const [visuals, setVisuals] = useState(" ".repeat((WIDTH)*(HEIGHT)));
 
 	useEffect(() => {
